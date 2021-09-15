@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+    <style>
+        li{
+            font-size: 1.25rem;
+        }
+        button{
+            background-color: brown;
+            color: cornsilk;
+            padding: 5px;
+            padding-left: 10px ;
+            padding-right: 13px;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: blue;
+            color: chartreuse;
+            font-weight: 900;
+        }
+        .post{
+            background-color: mediumblue;
+            color:mintcream;
+            border-radius: 10px;
+            border: rgb(121, 194, 121) 3px dotted;
+            padding: 5px;
+        }
+        .post:hover{
+            color:black;
+            background-color: hotpink;
+            margin: 10px;
+            padding: 10px;
+            border: indigo 4px double;
+        }
+        .main{
+            align-items:flex-start;
+            display: flex;
+            width: auto;
+        }
+        
+
+        ul li{
+            color:blue;
+            font-weight: 900;
+        }
+
+
+        #userData{
+            display: none;
+            color:gold;
+            padding: 20px;
+            font-size: .75rem;
+            border: rgb(201, 197, 1) 5px  double;
+            border-radius: 10px;
+            margin: 30px;
+            background-color: rgb(61, 45, 65);
+        }
+        /* hover userData */
+        #userData:hover{
+            background-color:black;
+            color:wheat;
+            border:5px double rgb(195, 0, 255);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        /* hover userData li */
+        #userData li:hover {
+            background-color:brown;
+            color:ghostwhite;
+            border:3px dotted blue;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>API TRY NOW</h1>
+   <div class="main">
+    <ul>
+        <li>Application Programing Interface</li>
+        <li>JavaScript Object Notation</li>
+        <li><button onclick="dataLoad()">Data Load</button></li>
+        <li><button class="button">User Data</button></li>
+        <li><button onclick="userPosts()">User Post</button></li>
+    </ul>
+    <ol id="userData">
+
+    </ol>
+    <section id="posts">
+
+    </section>
+   </div>
+    <script src="api.js"></script>
+</body>
+</html>
