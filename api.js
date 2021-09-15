@@ -46,7 +46,9 @@ function userPosts(){
     .then(responce=>responce.json())
     .then(data=>userP(data))
 }
-userPosts()
+// userPosts()
+
+
 function userP(posts){
     const beforeTag=document.getElementById('posts')
     for(const post of posts ){
